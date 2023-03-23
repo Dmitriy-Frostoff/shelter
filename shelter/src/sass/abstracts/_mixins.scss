@@ -1,0 +1,15 @@
+@mixin text ($style: normal, $weight: 400, $size: 15px, $height, $let-spacing) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $let-spacing;
+}
+
+@mixin border ($width: 2px, $style: solid, $color: $color-primary) {
+  border: $width $style $color;
+}
+
+@mixin transition ($property: all, $duration: 0.5s, $timing-function: ease, $delay: 0s) {
+  transition: $property $duration $timing-function $delay;
+}

@@ -307,4 +307,35 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  border: 2px solid transporent;
+  border-radius: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
