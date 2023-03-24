@@ -9,3 +9,7 @@
 %transition-basic {
   transition: all 0.5s ease 0s;
 }
+
+%link-disable {
+  pointer-events: none;
+}
