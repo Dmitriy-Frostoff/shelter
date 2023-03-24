@@ -38,13 +38,13 @@
   align-items: center;
 }
 
-@mixin flex-model-multiple-columns ($basis) {
+@mixin flex-model-multiple-columns ($basis, $align-content: space-between, $justify-content: center, $align-items: flex-start) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center;
-  align-items: flex-start;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  align-items: $align-items;
 
   >* {
     flex-basis: $basis;
