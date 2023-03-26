@@ -397,7 +397,6 @@ body {
   font-size: 1.5rem;
   line-height: 2.4rem;
   letter-spacing: normal;
-  color: #CDCDCD;
 }
 
 .link {
@@ -653,6 +652,55 @@ img {
 .not-only__puppy {
   width: 58.1666666667%;
   height: 60.6666666667%;
+}
+
+.about {
+  background: #FFFFFF;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.about-container > :first-child {
+  flex-basis: 25%;
+}
+.about-container > :last-child {
+  flex-basis: 35.8333333333%;
+}
+
+.about__image {
+  width: 25%;
+  height: 34%;
+}
+
+.about__content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 25px;
+  padding: 0 0 0 0;
+}
+.about__content-container > :nth-child(1) {
+  max-width: 86.0465116279%;
+}
+
+.about__title {
+  color: #545454;
+}
+
+.about__paragraph {
+  color: #CDCDCD;
 }
 
 .layout-one-column {

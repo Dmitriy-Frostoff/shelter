@@ -1,0 +1,98 @@
+.about {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  background: $color-light-xl;
+  // Animation
+
+  // Various
+
+}
+
+.about-container {
+  // Position
+  
+  // block-model
+  @include flex-model-two-columns ($first-basis: calc(300px / $content-width-desktop * 100%), $last-basis: calc(430px / $content-width-desktop * 100%), $align-content: space-between, $justify-content: center, $align-items: center);
+  column-gap: calc(120px / $content-width-desktop * 100%);
+  padding-top: 80px;
+  padding-bottom: 100px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.about__image {
+  // Position
+  
+  // block-model
+  width: calc(300px / $content-width-desktop * 100%);
+  height: calc(408px / $content-width-desktop * 100%);
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.about__content-container {
+  // Position
+  
+  // block-model
+  @include flex-model-one-column ($align-content: space-between, $justify-content: flex-start, $align-items: flex-start);
+  row-gap: 25px;
+  padding: 0 0 0 0;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  & > :nth-child(1) {
+    max-width: calc(370px / 430px * 100%);
+  }
+}
+
+.about__title {
+  // Position
+  
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  color: $color-dark-l;
+  // Animation
+
+  // Various
+  
+}
+
+.about__paragraph {
+  // Position
+  
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  color: $color-dark-s;
+
+  // Animation
+
+  // Various
+  
+}
