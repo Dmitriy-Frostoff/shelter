@@ -19,7 +19,7 @@
   // block-model
   padding-top: 60px;
   padding-bottom: 0;
-  @include flex-model-two-columns ($first-basis: calc(460 / 1200 * 100%), $last-basis: calc(698 / 1200 * 100%), $align-content: space-between, $justify-content: space-between, $align-items: center);
+  @include flex-model-two-columns ($first-basis: calc(460 / ($content-width-desktop / 1px) * 100%), $last-basis: calc(698 / ($content-width-desktop / 1px) * 100%), $align-content: space-between, $justify-content: space-between, $align-items: center);
   // Typography
 
   // Decoration
@@ -44,7 +44,7 @@
   
   // Animation
   @extend %transition-basic;
-  
+
   // Various
   &>:nth-child(1) {
     max-width: 67%;
@@ -55,8 +55,8 @@
   // Position
   
   // block-model
-  width: 698px;
-  height: 728px;
+  width: calc(698 / ($content-width-desktop / 1px) * 100%);
+  height: calc(728 / ($content-width-desktop / 1px) * 100%);
   // Typography
 
   // Decoration
