@@ -315,7 +315,7 @@ template {
   font-family: "Arial";
 }
 
-.link_current-page_pets, .link_current-page, .nav__link:active:before, .nav__link:active, .nav__link:hover:before, .nav__link:hover, .nav__link {
+.link_current-page_pets, .link_current-page, .nav__link:active:before, .nav__link:active, .nav__link:hover:before, .nav__link:hover, .nav__link, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
   transition: all 0.7s ease 0s;
 }
 
@@ -410,6 +410,9 @@ body {
   line-height: 2.21rem;
   letter-spacing: 0.06em;
   color: #292929;
+}
+.link:hover, .link:active {
+  animation: pulsation 1s infinite normal ease 0s;
 }
 
 li {
