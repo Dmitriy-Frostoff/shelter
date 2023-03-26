@@ -2,13 +2,39 @@
   // Position
 
   // block-model
-
+  @include flex-model-one-column ($align-content: center, $justify-content: center, $align-items: center);
   // Typography
   @extend %font-Georgia;
   @include text ($size: 17px, $height: 130%, $let-spacing: 0.06em);
   // Decoration
-  @include border ($color: transporent);
+  @include border ($color: transparent);
   border-radius: 100px;
+  text-align: center;
+
+  // Animation
+
+  // Various
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+}
+
+
+.not-only__button {
+  // Position
+  
+  // block-model
+  width: 207px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  background: $color-primary;
   // Animation
 
   // Various
