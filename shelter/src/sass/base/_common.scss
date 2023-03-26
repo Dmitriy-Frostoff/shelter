@@ -45,7 +45,164 @@ body {
   padding: 0;
 
   // Typography
+  @extend %font-Arial;
+  font-size: 1.6rem
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.title-h1 {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 4.4rem, $height: 5.72rem);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.title-h2 {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 3.5rem, $height: 4.55rem, $let-spacing: 0.06em);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.title-h3 {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 2rem, $height: 2.3rem, $let-spacing: 0.06em);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.title-h4 {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 1.5rem, $height: 1.65rem, $let-spacing: 0.06em);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+nav, ul, li {
+   // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+li {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  list-style: none;
+  // Animation
+
+  // Various
+
+}
+
+a {
+   // Position
+
+  // block-model
+  display: inline-block;
+  @extend %reset-padding-margin;
+
+  // Typography
+  color: $color-dark-s;
+  // Decoration
+  text-decoration: none;
+  @extend %cursor-pointer;
   
+  // Animation
+
+  // Various
+  & :visited {
+    color: $color-dark-s;
+  }
+}
+
+img {
+  // Position
+  @extend %reset-padding-margin;
+
+  // block-model
+  display: block;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+p {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+
   // Decoration
 
   // Animation
@@ -60,7 +217,7 @@ body {
   // block-model
   max-width: $content-width-desktop;
   margin: 0 auto;
-
+  
   // Typography
 
   // Decoration
@@ -86,4 +243,3 @@ body {
   // Various
 
 }
-

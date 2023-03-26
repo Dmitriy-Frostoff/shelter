@@ -1,6 +1,20 @@
-@import "base/_normalize";
+@import "base/normalize";
 
 //abstracts
 @import "abstracts/constants";
 @import "abstracts/mixins";
 @import "abstracts/placeholders";
+
+//base
+@import "base/common";
+@import "base/buttons";
+@import "base/typography";
+
+//components
+@import "components/Main/header";
+
+//layout
+@import "layout/content-structure";
+
+//pages
+@import "./pages/Pets/header_pets";

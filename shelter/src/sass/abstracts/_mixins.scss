@@ -1,4 +1,4 @@
-@mixin text ($style: normal, $weight: 400, $size: 15px, $height, $let-spacing) {
+@mixin text ($style: normal, $weight: 400, $size: 15px, $height, $let-spacing: normal) {
   font-style: $style;
   font-weight: $weight;
   font-size: $size;
@@ -14,13 +14,13 @@
   transition: $property $duration $timing-function $delay;
 }
 
-@mixin flex-model-two-columns ($first-basis: 50%, $last-basis: 50%) {
+@mixin flex-model-two-columns ($first-basis: 50%, $last-basis: 50%, $align-content: center, $justify-content: space-between, $align-items: center) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  align-items: center;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  align-items: $align-items;
   > :first-child {
     flex-basis: $first-basis;
   }
@@ -29,13 +29,13 @@
   }
 }
 
-@mixin flex-model-one-column () {
+@mixin flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: flex-start) {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  align-items: center;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 @mixin flex-model-multiple-columns ($basis, $align-content: space-between, $justify-content: center, $align-items: flex-start) {
