@@ -435,6 +435,11 @@ img {
 .container {
   margin: 0 auto;
 }
+@media (min-width: 1281px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 @media (max-width: 1280px) {
   .container {
     padding: 0 40px;
@@ -516,8 +521,9 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  column-gap: 47.5%;
 }
 .header__container > :first-child {
   flex-basis: auto;
