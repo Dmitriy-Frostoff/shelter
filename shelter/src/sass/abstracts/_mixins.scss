@@ -57,6 +57,12 @@
   grid-template-columns: repeat($columns, $el-height);
 }
 
+@mixin media-wide-desktop {
+  @media (min-width: calc($width-desktop + 1px)) {
+    @content;
+  }
+}
+
 @mixin media-desktop {
   @media (max-width: $width-desktop) {
     @content;

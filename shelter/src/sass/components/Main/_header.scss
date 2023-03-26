@@ -22,7 +22,8 @@
   // block-model
   padding-top: 30px;
   padding-bottom: 30px;
-  @include flex-model-two-columns ($first-basis: auto, $last-basis: 36.92%, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  @include flex-model-two-columns ($first-basis: auto, $last-basis: 36.92%, $align-content: space-between, $justify-content: center, $align-items: center);
+  column-gap: calc(570px / $content-width-desktop * 100%);
   // Typography
 
   // Decoration
