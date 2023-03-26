@@ -1,4 +1,4 @@
-@mixin text ($style: normal, $weight: 400, $size: 15px, $height, $let-spacing: normal) {
+@mixin text ($style: normal, $weight: 400, $size: 1.5rem, $height:$size, $let-spacing: normal) {
   font-style: $style;
   font-weight: $weight;
   font-size: $size;

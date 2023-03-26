@@ -1,0 +1,66 @@
+.not-only {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.not-only-container {
+  // Position
+  
+  // block-model
+  padding-top: 60px;
+  padding-bottom: 0;
+  @include flex-model-two-columns ($first-basis: calc(460 / 1200 * 100%), $last-basis: calc(698 / 1200 * 100%), $align-content: space-between, $justify-content: space-between, $align-items: center);
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.not-only__content-container {
+  // Position
+  
+  // block-model
+  @include flex-model-one-column ($align-content: space-between, $justify-content: flex-start, $align-items: flex-start);
+  row-gap: 42px;
+  padding: 0 0 79px 0;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+  &:first-child {
+    max-width: 67%;
+  }
+}
+
+.not-only__puppy {
+  // Position
+  
+  // block-model
+  width: 698px;
+  height: 728px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}

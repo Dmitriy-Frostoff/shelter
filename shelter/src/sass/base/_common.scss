@@ -66,7 +66,7 @@ body {
   @include text ($size: 4.4rem, $height: 5.72rem);
 
   // Decoration
-
+  color: $color-light-xl;
   // Animation
 
   // Various
@@ -121,6 +121,42 @@ body {
 
   // Decoration
 
+  // Animation
+
+  // Various
+
+}
+
+.paragraph-l {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Arial;
+  @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 2.4rem, $let-spacing: normal);
+
+  // Decoration
+  color: $color-dark-s;
+  // Animation
+
+  // Various
+
+}
+
+.link {
+  // Position
+
+  // block-model
+  width: inherit;
+  height: inherit;
+  padding: 5% 0;
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 1.7rem, $height: 2.21rem, $let-spacing: 0.06em);
+
+  // Decoration
+  color: $color-dark-3xl;
   // Animation
 
   // Various
