@@ -622,7 +622,7 @@ img {
   row-gap: 42px;
   padding: 0 0 79px 0;
 }
-.not-only__content-container:first-child {
+.not-only__content-container > :nth-child(1) {
   max-width: 67%;
 }
 
