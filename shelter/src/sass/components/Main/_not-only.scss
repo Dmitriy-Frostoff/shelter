@@ -44,7 +44,7 @@
   // Animation
 
   // Various
-  &:first-child {
+  &>:nth-child(1) {
     max-width: 67%;
   }
 }
