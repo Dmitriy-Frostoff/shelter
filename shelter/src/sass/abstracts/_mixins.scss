@@ -56,3 +56,21 @@
   grid-template-rows: repeat($rows, $el-width);
   grid-template-columns: repeat($columns, $el-height);
 }
+
+@mixin media-desktop {
+  @media (max-width: $width-desktop) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $width-mobile) {
+    @content;
+  }
+}

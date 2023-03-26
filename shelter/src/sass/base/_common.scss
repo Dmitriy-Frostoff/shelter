@@ -4,6 +4,10 @@ $content-width-mobile: 300px;
 
 $font-size-initial: 10px;
 
+$padding-content-desktop: 40px;
+$padding-content-tablet: 30px;
+$padding-content-mobile: 10px;
+
 * {
   // Position
 
@@ -255,7 +259,6 @@ p {
   // Position
 
   // block-model
-  max-width: $content-width-desktop;
   margin: 0 auto;
   
   // Typography
@@ -266,6 +269,17 @@ p {
 
   // Various
 
+  @include media-desktop {
+    padding: 0 $padding-content-desktop;
+  }
+  
+  @include media-tablet {
+    padding: 0 $padding-content-tablet;
+  }
+  
+  @include media-mobile {
+    padding: 0 $padding-content-mobile;
+  }
 }
 
 .hidden {
