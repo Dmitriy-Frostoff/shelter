@@ -12,14 +12,18 @@
   text-align: center;
 
   // Animation
-
+  @extend %transition-basic;
+  
   // Various
 
   &:hover {
+    @extend %transition-basic;
     background-color: $color-primary-light;
+
   }
 
   &:active {
+    @extend %transition-basic;
     background-color: $color-primary;
   }
 }

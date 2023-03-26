@@ -25,6 +25,7 @@
   // Decoration
   
   // Animation
+  @extend %transition-basic;
 
   // Various
 
@@ -42,7 +43,8 @@
   // Decoration
   
   // Animation
-
+  @extend %transition-basic;
+  
   // Various
   &>:nth-child(1) {
     max-width: 67%;

@@ -158,9 +158,13 @@ body {
   // Decoration
   color: $color-dark-3xl;
   // Animation
-
+  @extend %transition-basic;
+  
   // Various
-
+  &:hover, &:active {
+    @extend %transition-basic;
+    @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
+  }
 }
 
 nav, ul, li {
