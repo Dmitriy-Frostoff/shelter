@@ -1,0 +1,16 @@
+.button {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 17px, $height: 130%, $let-spacing: 0.06em);
+  // Decoration
+  @include border ($color: transporent);
+  border-radius: 100px;
+  // Animation
+
+  // Various
+
+}

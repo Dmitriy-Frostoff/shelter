@@ -1,0 +1,198 @@
+.header {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  // background: $color-background-dark-header;
+  background: 
+    url("../src/assets/background/noise_transparent@2x.png"),
+    $color-background-dark-header;
+    // filter: contrast(270%) brightness(700%);
+  // Animation
+
+  // Various
+
+}
+
+.header__container {
+  // Position
+  
+  // block-model
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include flex-model-two-columns ($first-basis: auto, $last-basis: 36.92%, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.logo-container {
+  // Position
+  
+  // block-model
+  @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+  row-gap: 10px;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.logo-title {
+  // Position
+  
+  // block-model
+
+  // Typography
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  color: $color-primary;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.logo-subtitle {
+  // Position
+  
+  // block-model
+
+  // Typography
+  @include text ($style: normal, $weight: 400, $size: 1.3rem, $height: 1.5rem, $let-spacing: 0.1em);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__list {
+  // Position
+  
+  // block-model
+  @include flex-model-multiple-columns ($basis: auto, $justify-content: space-between, $align-items: center);
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__item {
+  // Position
+  
+  // block-model
+
+  // Typography
+  @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 2.4rem, $let-spacing: normal);
+  color: $color-light-s;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__link {
+  // Position
+  position: relative;
+  // block-model
+
+  // Typography
+  line-height: 50px;
+  color: $color-light-l;
+  // Decoration
+  @extend %cursor-pointer;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:hover {
+    color: $color-light-s;
+    @extend %transition-basic;
+
+  &:before {
+    position: absolute;
+    @extend %transition-basic;
+
+    content: "";
+    bottom: 11px;
+    width: 100%;
+    border-bottom: 3px solid $color-primary;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+
+  }
+  }
+
+  &:active {
+    color: $color-light-s;
+    @extend %transition-basic;
+
+    &:before {
+      transform: scaleX(1);
+      @extend %transition-basic;
+      transform-origin: bottom right;
+    }
+  }
+}
+
+.link_current-page {
+  // Position
+  position: relative;
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %link-disable;
+  color: $color-light-s;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:before {
+    position: absolute;
+
+    content: "";
+    bottom: 11px;
+    width: 100%;
+    border-bottom: 3px solid $color-primary;
+  }
+}

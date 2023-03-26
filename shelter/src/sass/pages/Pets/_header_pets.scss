@@ -1,0 +1,108 @@
+.header_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  // background: $color-background-dark-header;
+  background: 
+    $color-light-xl;
+    // filter: contrast(270%) brightness(700%);
+  // Animation
+
+  // Various
+
+}
+
+.logo-title_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.logo-subtitle_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-3xl;
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__item_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__link_pets {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:hover {
+    color: $color-dark-3xl;
+  }
+
+  &:active {
+    color: $color-dark-3xl;
+  }
+}
+
+.link_current-page_pets {
+  // Position
+  position: relative;
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %link-disable;
+  color: $color-dark-3xl;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:before {
+    position: absolute;
+
+    content: "";
+    bottom: 11px;
+    width: 100%;
+    border-bottom: 3px solid $color-primary;
+  }
+}
