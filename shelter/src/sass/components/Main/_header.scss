@@ -46,9 +46,11 @@
   // Decoration
 
   // Animation
-
+  
   // Various
-
+  &:hover {
+    @include animation ($name: pulsation, $duration: 1.5s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
+  }
 }
 
 .logo-title {
@@ -147,7 +149,7 @@
   &:hover {
     color: $color-light-s;
     @extend %transition-basic;
-
+    @include animation ($name: pulsation, $duration: 1.5s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
   &:before {
     position: absolute;
     @extend %transition-basic;

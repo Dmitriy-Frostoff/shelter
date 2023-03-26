@@ -332,6 +332,14 @@ p, img, a, nav, ul, li, .title-h4, .title-h3, .title-h2, .title-h1 {
   cursor: pointer;
 }
 
+@keyframes pulsation {
+  from {
+    transform: scaleX(0.95);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -469,6 +477,9 @@ img {
   align-items: center;
   row-gap: 10px;
 }
+.logo-container:hover {
+  animation: pulsation 1.5s infinite normal ease 0s;
+}
 
 .logo-title {
   font-size: 3.2rem;
@@ -512,6 +523,7 @@ img {
 }
 .nav__link:hover {
   color: #FAFAFA;
+  animation: pulsation 1.5s infinite normal ease 0s;
 }
 .nav__link:hover:before {
   position: absolute;
