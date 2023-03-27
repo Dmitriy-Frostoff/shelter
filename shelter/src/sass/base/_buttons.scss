@@ -44,3 +44,82 @@
   // Various
 
 }
+
+.our-friends__button_left {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  // Typography
+
+  // Decoration
+  background: url("../src/assets/images/Main/03_Our%20Friends/buttons/button_arrow_left.svg");
+  background-repeat: no-repeat;
+  @extend %cursor-pointer;
+  @extend %transition-basic;
+
+  // Animation
+
+  // Various
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+}
+
+.our-friends__button_right {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  // Typography
+
+  // Decoration
+  background: url("../src/assets/images/Main/03_Our%20Friends/buttons/button_arrow_right.svg");
+  background-repeat: no-repeat;
+  @extend %cursor-pointer;
+  @extend %transition-basic;
+
+  // Animation
+
+  // Various
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+}
+
+.our-friends__button {
+  // Position
+  
+  // block-model
+  width: 261px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  background-color: $color-primary;
+
+  // Animation
+
+  // Various
+
+}
