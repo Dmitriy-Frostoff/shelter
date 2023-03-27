@@ -38,7 +38,7 @@
   align-items: $align-items;
 }
 
-@mixin flex-model-multiple-columns ($basis, $align-content: space-between, $justify-content: center, $align-items: flex-start) {
+@mixin flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: center, $align-items: flex-start) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
