@@ -1,0 +1,118 @@
+.pets-card__container {
+  // Position
+
+  // block-model
+  max-width: 990px;
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-basis: 82.5%;
+  column-gap: 90px;
+  flex-wrap: nowrap;
+  // Typography
+  
+  // Decoration
+  overflow: hidden;
+
+  // Animation
+
+  // Various
+
+}
+
+.pets-card {
+  // Position
+
+  // block-model
+  width: 270px;
+  height: 435px;
+  @include flex-model-one-column ($align-content: space-between, $justify-content: flex-start, $align-items: center);
+  row-gap: 30px;
+
+  // Typography
+
+  // Decoration
+  background: $color-light-s;
+  border-radius: 9px;
+  // Animation
+
+  // Various
+  &:hover {
+    @extend %cursor-pointer;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  }
+
+  &:hover .pets-card__button {
+    @extend %transition-basic;
+    @extend %cursor-pointer;
+    @extend %transition-basic;
+    @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
+    background-color: $color-primary-light;
+    border-radius: 100px;
+
+  }
+}
+
+.pets-card__image {
+  // Position
+
+  // block-model
+  width: 270px;
+  height: 270px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.pets-card-title {
+  // Position
+
+  // block-model
+  @extend %reset-padding-margin;
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($size: 2rem, $height: 2.3rem, $let-spacing: 0.06em);
+
+  // Decoration
+  color: $color-dark-l;
+  // Animation
+
+  // Various
+
+}
+
+.pets-card__button {
+  // Position
+
+  // block-model
+  width: 187px;
+  height: 52px;
+  padding: calc((48px - 1.7rem) / 2) 0;
+
+  // Typography
+
+  // Decoration
+  @include border ();
+  @extend %cursor-pointer;
+
+  // Animation
+  @extend %transition-basic;
+  // Various
+  
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+}
+

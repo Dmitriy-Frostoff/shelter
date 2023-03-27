@@ -10,11 +10,13 @@
 @import "base/common";
 @import "base/buttons";
 @import "base/typography";
+@import "base/pets-card";
 
 //components
 @import "components/Main/header";
 @import "components/Main/not-only";
 @import "components/Main/about";
+@import "components/Main/our-friends";
 
 //layout
 @import "layout/content-structure";
