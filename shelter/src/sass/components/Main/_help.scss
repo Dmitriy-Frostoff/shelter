@@ -1,0 +1,116 @@
+.help {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  background: $color-light-xl;
+  // Animation
+
+  // Various
+
+}
+
+.help__container {
+  // Position
+  
+  // block-model
+  @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+  margin-top: 80px;
+  margin-bottom: 100px;
+  row-gap: 60px;
+  >* {
+    flex-basis: auto;
+  }
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.help__title {
+  // Position
+  
+  // block-model
+  width: calc(310px / $content-width-desktop * 100%);
+  // Typography
+  text-align: center;
+  // Decoration
+  color: $color-dark-l;
+  // Animation
+
+  // Various
+
+}
+
+.help__content-container {
+  // Position
+  
+  // block-model
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: center, $align-items: flex-start);
+  gap: 55px 120px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.help__option {
+  // Position
+  
+  // block-model
+  width: auto;
+  height: 113px;
+  @include flex-model-one-column ($align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.help__icon {
+  // Position
+  
+  // block-model
+  width: 60px;
+  height: 60px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.help__subtitle {
+  // Position
+  
+  // block-model
+
+  // Typography
+  text-align: center;
+  white-space: nowrap;
+  // Decoration
+  color: $color-dark-l;
+  // Animation
+
+  // Various
+
+}
