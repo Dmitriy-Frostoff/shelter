@@ -80,7 +80,10 @@
   // Animation
 
   // Various
-
+  &:hover, &:active {
+    @extend %transition-basic;
+    @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
+  }
 }
 
 .help__icon {
