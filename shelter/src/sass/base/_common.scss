@@ -63,7 +63,7 @@ body {
 
   // Typography
   @extend %font-Georgia;
-  @include text ($size: 4.4rem, $height: 5.72rem);
+  @include text ($style: normal, $weight: 400, $size: 4.4rem, $height: 5.72rem);
 
   // Decoration
   color: $color-light-xl;
@@ -81,7 +81,7 @@ body {
 
   // Typography
   @extend %font-Georgia;
-  @include text ($size: 3.5rem, $height: 4.55rem, $let-spacing: 0.06em);
+  @include text ($style: normal, $weight: 400, $size: 3.5rem, $height: 4.55rem, $let-spacing: 0.06em);
 
   // Decoration
 
@@ -99,7 +99,7 @@ body {
 
   // Typography
   @extend %font-Georgia;
-  @include text ($size: 2rem, $height: 2.3rem, $let-spacing: 0.06em);
+  @include text ($style: normal, $weight: 400, $size: 2rem, $height: 2.3rem, $let-spacing: 0.06em);
 
   // Decoration
 
@@ -117,7 +117,7 @@ body {
 
   // Typography
   @extend %font-Georgia;
-  @include text ($size: 1.5rem, $height: 1.65rem, $let-spacing: 0.06em);
+  @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 1.65rem, $let-spacing: 0.06em);
 
   // Decoration
 
@@ -135,6 +135,23 @@ body {
   // Typography
   @extend %font-Arial;
   @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 2.4rem, $let-spacing: normal);
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.donation-description {
+  // Position
+
+  // block-model
+
+  // Typography
+  @extend %font-Arial;
+  @include text ($style: italic, $weight: 400, $size: 1.2rem, $height: 1.8rem, $let-spacing: normal);
 
   // Decoration
 

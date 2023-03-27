@@ -311,7 +311,7 @@ template {
   font-family: "Georgia";
 }
 
-.paragraph-l, body {
+.donation-description, .paragraph-l, body {
   font-family: "Arial";
 }
 
@@ -396,6 +396,14 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.4rem;
+  letter-spacing: normal;
+}
+
+.donation-description {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   letter-spacing: normal;
 }
 
