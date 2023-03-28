@@ -915,12 +915,15 @@ img {
   flex-basis: auto;
 }
 
+.footer__link {
+  display: block;
+}
 .footer__link:hover, .footer__link:active {
   animation: pulsation 1s infinite normal ease 0s;
 }
 
-.footer__icon:hover {
-  cursor: pointer;
+.footer__icon {
+  pointer-events: none;
 }
 
 .footer__link-title {

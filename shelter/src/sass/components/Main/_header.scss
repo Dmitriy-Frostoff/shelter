@@ -184,7 +184,7 @@
   // Typography
 
   // Decoration
-  @extend %link-disable;
+  @extend %pointer-events-disable;
   color: $color-light-s;
   // Animation
   @extend %transition-basic;

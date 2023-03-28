@@ -96,7 +96,7 @@
   // Position
   
   // block-model
-
+  display: block;
   // Typography
 
   // Decoration
@@ -119,13 +119,11 @@
   // Typography
 
   // Decoration
-  
+  pointer-events: none;
   // Animation
 
   // Various
-  &:hover {
-    cursor: pointer;
-  }
+  
 }
 
 .icon-inner {
@@ -140,7 +138,7 @@
   // Animation
 
   // Various
-
+  
 }
 
 .footer__link-title {
