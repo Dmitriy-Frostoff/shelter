@@ -123,3 +123,132 @@
   // Various
 
 }
+
+.button-pagination {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %cursor-pointer;
+  // Animation
+  @extend %transition-basic;
+  
+  // Various
+
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+}
+
+.button-start {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_inactive-start.svg");
+  // Animation
+
+  // Various
+
+}
+
+.button-previous {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_inactive_left.svg");
+  // Animation
+
+  // Various
+
+}
+
+.button-count {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_active-count.svg");
+  // Animation
+
+  // Various
+
+}
+
+.button-next {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  background-image: url("../src/assets/images/Pets/01_Our Friends/icons/button_paginator-right.svg");
+  // Animation
+
+  // Various
+
+}
+
+.button-end {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  content: '';
+  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator-end.svg");
+  // Animation
+
+  // Various
+
+}
+
+.button-disabled {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  @extend %link-disable;
+  // Animation
+
+  // Various
+
+}

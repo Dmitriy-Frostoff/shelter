@@ -66,3 +66,37 @@
   
 }
 
+.our-friends__content-container_pets-page {
+  // Position
+
+  // block-model
+  width: 100%;
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 53px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
+
+.our-friends__buttons-container {
+  // Position
+
+  // block-model
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
