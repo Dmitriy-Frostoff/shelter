@@ -1,0 +1,176 @@
+.footer {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  background: 
+    url("../src/assets/background/noise_transparent@2x.png"),
+    $color-background-dark-footer;
+  // Animation
+
+  // Various
+
+}
+
+.footer__container {
+  // Position
+  
+  // block-model
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: flex-start);
+  padding-top: 40px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+  & > :nth-child(1) {
+    flex-basis: calc(279px / $content-width-desktop * 100%);
+  }
+  
+  & > :nth-child(2) {
+    flex-basis: calc(302px / $content-width-desktop * 100%);
+  }
+  
+  & > :nth-child(3) {
+    flex-basis: calc(300px / $content-width-desktop * 100%);
+  }
+}
+
+.footer__content-container {
+  // Position
+  
+  // block-model
+  height: 234px;
+  @include flex-model-one-column ($align-content: normal, $justify-content: space-between, $align-items: flex-start);
+  flex-wrap: nowrap;
+  margin-top: 16px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.footer__title {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  color: $color-light-xl;
+  
+  // Animation
+
+  // Various
+
+}
+
+.footer__link-wrapper {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  // Animation
+
+  // Various
+
+}
+
+.footer__link {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  
+  // Animation
+  @extend %transition-basic;
+  
+  // Various
+  &:hover, &:active {
+    @extend %transition-basic;
+    @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
+  }
+}
+
+.footer__icon {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon-inner {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer__link-title {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  color: $color-primary;
+  // Animation
+
+  // Various
+
+}
+
+.footer__image {
+  // Position
+  
+  // block-model
+  width: 300px;
+  height: 310px;
+  align-self: end;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
