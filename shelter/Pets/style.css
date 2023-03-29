@@ -307,7 +307,7 @@ template {
   display: none;
 }
 
-.pets-card-title, .button, .link, .title-h4, .title-h3, .title-h2, .title-h1 {
+.button-pagination_count, .pets-card-title, .button, .link, .title-h4, .title-h3, .title-h2, .title-h1 {
   font-family: "Georgia";
 }
 
@@ -315,11 +315,11 @@ template {
   font-family: "Arial";
 }
 
-.link_current-page_pets, .footer__link:hover, .footer__link:active, .footer__link, .link_current-page, .nav__link:active:before, .nav__link:active, .nav__link:hover:before, .nav__link:hover, .nav__link, .pets-card__button:active, .pets-card__button:hover, .pets-card__button, .pets-card:hover .pets-card__button, .button-pagination:active, .button-pagination:hover, .button-pagination, .our-friends__button_right:active, .our-friends__button_right:hover, .our-friends__button_right, .our-friends__button_left:active, .our-friends__button_left:hover, .our-friends__button_left, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
+.link_current-page_pets, .footer__link:hover, .footer__link:active, .footer__link, .link_current-page, .nav__link:active:before, .nav__link:active, .nav__link:hover:before, .nav__link:hover, .nav__link, .button-pagination:active, .button-pagination:hover, .button-pagination, .pets-card__button:active, .pets-card__button:hover, .pets-card__button, .pets-card:hover .pets-card__button, .our-friends__button_right:active, .our-friends__button_right:hover, .our-friends__button_right, .our-friends__button_left:active, .our-friends__button_left:hover, .our-friends__button_left, .button:active, .button:hover, .button, .link:hover, .link:active, .link {
   transition: all 0.7s ease 0s;
 }
 
-.link_current-page_pets, .link_current-page, .button-disabled {
+.link_current-page_pets, .link_current-page, .buttons-item_disabled {
   pointer-events: none;
 }
 
@@ -328,7 +328,7 @@ template {
   margin: 0;
 }
 
-.nav__link, .pets-card__button, .pets-card:hover .pets-card__button, .pets-card:hover, .button-pagination, .our-friends__button_right, .our-friends__button_left, a {
+.nav__link, .button-pagination, .pets-card__button, .pets-card:hover .pets-card__button, .pets-card:hover, .our-friends__button_right, .our-friends__button_left, a {
   cursor: pointer;
 }
 
@@ -542,51 +542,6 @@ img {
   background-color: #F1CDB3;
 }
 
-.button-pagination:hover {
-  background-color: #FDDCC4;
-  border-radius: 100px;
-}
-.button-pagination:active {
-  background-color: #F1CDB3;
-  border-radius: 100px;
-}
-
-.button-start {
-  width: 52px;
-  height: 52px;
-  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_inactive-start.svg");
-}
-
-.button-previous {
-  width: 52px;
-  height: 52px;
-  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_inactive_left.svg");
-}
-
-.button-count {
-  width: 52px;
-  height: 52px;
-  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator_active-count.svg");
-}
-
-.button-next {
-  width: 52px;
-  height: 52px;
-  background-image: url("../src/assets/images/Pets/01_Our Friends/icons/button_paginator-right.svg");
-}
-
-.button-end {
-  width: 52px;
-  height: 52px;
-  content: "";
-  background-image: url("../src/assets/images/Pets/01_Our%20Friends/icons/button_paginator-end.svg");
-}
-
-.button-disabled {
-  width: 52px;
-  height: 52px;
-}
-
 @font-face {
   font-family: "Georgia";
   src: url("../../assets/fonts/Georgia.eot");
@@ -681,6 +636,56 @@ img {
 }
 .pets-card__button:active {
   background-color: #F1CDB3;
+  border-radius: 100px;
+}
+
+.button-pagination {
+  width: 52px;
+  height: 52px;
+}
+.button-pagination:hover {
+  background-color: #FDDCC4;
+  border-radius: 100px;
+}
+.button-pagination:active {
+  background-color: #F1CDB3;
+  border-radius: 100px;
+}
+
+.button-pagination_normal {
+  pointer-events: all;
+}
+.button-pagination_normal > :nth-child(1) {
+  fill: #292929;
+}
+.button-pagination_normal > :nth-child(2) {
+  stroke: #F1CDB3;
+}
+
+.button-pagination_active {
+  background: #F1CDB3;
+}
+
+.button-pagination_disabled > :nth-child(1) {
+  fill: #CDCDCD;
+}
+.button-pagination_disabled > :nth-child(2) {
+  stroke: #CDCDCD;
+}
+
+.button-pagination_count {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border: 2px solid #F1CDB3;
+}
+
+.buttons-item {
+  width: 52px;
+  height: 52px;
   border-radius: 100px;
 }
 
