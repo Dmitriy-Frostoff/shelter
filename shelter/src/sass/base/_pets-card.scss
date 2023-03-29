@@ -51,11 +51,14 @@
   background: $color-light-s;
   border-radius: 9px;
   // Animation
+  @extend %transition-basic;
 
   // Various
   &:hover {
     @extend %cursor-pointer;
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    @extend %transition-basic;
+
   }
 
   &:hover .pets-card__button {
