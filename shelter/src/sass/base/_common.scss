@@ -89,6 +89,16 @@ body {
 
   // Various
 
+  @include media-tablet {
+    align-self: flex-start;
+  }
+
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 2.5rem, $height: 3.25rem, $let-spacing: 0.06em);
+    align-self: center;
+    text-align: center;
+  }
+
 }
 
 .title-h2 {
