@@ -22,9 +22,9 @@
   // block-model
   padding-top: 30px;
   padding-bottom: 30px;
-  @include flex-model-two-columns ($first-basis: auto, $last-basis: 36.92%, $align-content: space-between, $justify-content: center, $align-items: center);
-  column-gap: calc(570px / $content-width-desktop * 100%);
-  // Typography
+  @include flex-model-two-columns ($first-basis: 186px, $last-basis: 443px, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  // Typographynav
 
   // Decoration
   
@@ -32,6 +32,15 @@
 
   // Various
 
+  @include media-tablet-minus1px {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    > :last-child {
+      flex-basis: auto;
+    }
+  }
 }
 
 .logo-container {
@@ -39,6 +48,7 @@
   
   // block-model
   @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+  flex-wrap: nowrap;
   row-gap: 10px;
 
   // Typography
@@ -88,7 +98,7 @@
 
 .nav {
   // Position
-  
+
   // block-model
 
   // Typography
@@ -98,7 +108,35 @@
   // Animation
 
   // Various
+  @include media-tablet-minus1px {
+    position: relative;
+    background: $color-dark-3xl;
+  }
+}
 
+@include media-tablet-minus1px {
+  .nav_active {
+    // Position
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    // block-model
+    width: 320px;
+    height: 100vh;
+    @include flex-model-one-column ($align-content: space-between, $justify-content: space-between, $align-items: center);
+    flex-wrap: nowrap;
+
+    // Typography
+  
+    // Decoration
+    background: $color-dark-3xl;
+
+    // Animation
+  
+    // Various
+  }
 }
 
 .nav__list {
@@ -115,7 +153,47 @@
 
   // Various
 
+  @include media-tablet-minus1px {
+    /* Position */
+    overflow: auto;
+
+    /* block-model */
+    width: 320px;
+    display: none;
+    // padding: 25px 0;
+
+    /* Typography */
+    
+    /* Decoration */
+    transform: translateX(100%);
+    /* Animation */
+    @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
+    /* Various */
+  
+  }
 }
+
+@include media-tablet-minus1px {
+  .nav__list_active {
+    /* Position */
+
+    /* block-model */
+    @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+    flex-wrap: nowrap;
+    row-gap: 42px;
+    /* Typography */
+    
+    /* Decoration */
+    transform: translateX(0%);
+    /* Animation */
+    @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
+    /* Various */
+
+  }
+}
+
 
 .nav__item {
   // Position
@@ -130,7 +208,9 @@
   // Animation
 
   // Various
-
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 3.2rem, $height: 5.12rem, $let-spacing: normal);
+  }
 }
 
 .nav__link {
@@ -196,5 +276,11 @@
     bottom: 11px;
     width: 100%;
     border-bottom: 3px solid $color-primary;
+  }
+
+  @include media-mobile {
+    &:before {
+      top: 50px;
+    }
   }
 }

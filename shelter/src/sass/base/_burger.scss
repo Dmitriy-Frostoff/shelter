@@ -1,0 +1,163 @@
+$burger-menu-width: 30px;
+$burger-menu-height: 22px;
+
+.burger-menu {
+  /* Position */
+
+  /* block-model */
+  display: none;
+
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 767px){
+  
+  .burger-menu {
+      /* Position */
+      
+      /* block-model */
+      width: $burger-menu-width;
+      height: $burger-menu-height;
+      display: block;
+
+      /* Typography */
+  
+      /* Decoration */
+      
+      /* Animation */
+
+      /* Various */
+
+  }
+
+  .header__burger-menu {
+      /* Position */
+      position: relative;
+
+      /* block-model */
+      align-self: flex-end;
+      /* Typography */
+  
+      /* Decoration */
+      
+      /* Animation */
+      @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
+      /* Various */
+
+  }
+
+  .header__burger-menu::before {
+      /* Position */
+      top: 0;
+      left: 0;
+      /* block-model */
+
+      /* Typography */
+  
+      /* Decoration */
+      content: "";
+      /* Animation */
+
+      /* Various */
+
+  }
+
+  .header__burger-menu::after {
+      /* Position */
+      bottom: 0;
+      left: 0;
+      /* block-model */
+
+      /* Typography */
+  
+      /* Decoration */
+      content: "";
+      /* Animation */
+
+      /* Various */
+
+  }
+
+  .header__burger-menu_cutlet1 {
+      /* Position */
+      top: calc($burger-menu-height / 2 - 1px);
+      left: 0;
+      /* block-model */
+
+      /* Typography */
+  
+      /* Decoration */
+      
+      /* Animation */
+
+      /* Various */
+
+  }
+  
+  .header__burger-menu_cutlet1,
+  .header__burger-menu::before,
+  .header__burger-menu::after {
+      /* Position */
+      position: absolute;
+
+      /* block-model */
+      width: 100%;
+      height: 2px;
+      display: block;
+
+      /* Typography */
+      
+      /* Decoration */
+      background-color: $color-primary;
+      
+      /* Animation */
+      
+      /* Various */
+      
+  }
+  
+  .header__burger-menu_cutlet1-pets,
+  .header__burger-menu-pets::before,
+  .header__burger-menu-pets::after {
+      /* Position */
+      position: absolute;
+
+      /* block-model */
+      width: 100%;
+      height: 2px;
+      display: block;
+
+      /* Typography */
+      
+      /* Decoration */
+      background-color: $color-dark;
+      
+      /* Animation */
+      
+      /* Various */
+      
+  }
+  
+  .header__burger-menu_active {
+      /* Position */
+
+      /* block-model */
+      margin: 50px 21px 0 0;
+      /* Typography */
+      
+      /* Decoration */
+      transform: rotate(90deg);
+      /* Animation */
+      @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+      /* Various */
+      
+  }
+}
