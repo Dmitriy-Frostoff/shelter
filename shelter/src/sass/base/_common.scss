@@ -46,13 +46,31 @@ body {
 
   // Typography
   @extend %font-Arial;
-  font-size: 1.6rem
+  font-size: 1.6rem;
   // Decoration
 
   // Animation
 
   // Various
+  
+}
 
+@include media-tablet-minus1px {
+  .body_scroll-lock {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    overflow: hidden;
+
+    /* Animation */
+
+    /* Various */
+
+  }
 }
 
 .title-h1 {
@@ -70,6 +88,16 @@ body {
   // Animation
 
   // Various
+
+  @include media-tablet {
+    align-self: flex-start;
+  }
+
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 2.5rem, $height: 3.25rem, $let-spacing: 0.06em);
+    align-self: center;
+    text-align: center;
+  }
 
 }
 

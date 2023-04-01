@@ -10,7 +10,7 @@
   border: $width $style $color;
 }
 
-@mixin transition ($property: all, $duration: 0.5s, $timing-function: ease, $delay: 0s) {
+@mixin transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s) {
   transition: $property $duration $timing-function $delay;
 }
 
@@ -71,6 +71,12 @@
 
 @mixin media-tablet {
   @media (max-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin media-tablet-minus1px {
+  @media (max-width: calc($width-tablet - 1px)) {
     @content;
   }
 }
