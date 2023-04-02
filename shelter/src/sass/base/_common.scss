@@ -137,6 +137,9 @@ body {
 
   // Various
 
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 1.65rem, $let-spacing: 0.06em);
+  }
 }
 
 .title-h4 {
