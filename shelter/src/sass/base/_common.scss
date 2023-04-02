@@ -116,7 +116,9 @@ body {
   // Animation
 
   // Various
-
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 2.5rem, $height: 3.25rem, $let-spacing: 0.06em);
+  }
 }
 
 .title-h3 {
