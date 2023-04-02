@@ -74,6 +74,10 @@
     background-color: $color-primary;
     border-radius: 100px;
   }
+
+  @include media-mobile {
+    order: 1;
+  }
 }
 
 .our-friends__button_right {
@@ -105,6 +109,11 @@
     background-color: $color-primary;
     border-radius: 100px;
   }
+
+  @include media-mobile {
+    order: 1;
+  }
+  
 }
 
 .our-friends__button {
