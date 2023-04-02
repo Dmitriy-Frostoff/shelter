@@ -418,6 +418,15 @@ body {
   line-height: 2.3rem;
   letter-spacing: 0.06em;
 }
+@media (max-width: 540px) {
+  .title-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .title-h4 {
   font-style: normal;
@@ -1063,6 +1072,7 @@ img {
 }
 @media (max-width: 540px) {
   .our-friends__container {
+    padding-bottom: 44px;
     row-gap: 42px;
   }
 }

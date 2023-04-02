@@ -418,6 +418,15 @@ body {
   line-height: 2.3rem;
   letter-spacing: 0.06em;
 }
+@media (max-width: 540px) {
+  .title-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .title-h4 {
   font-style: normal;
@@ -1256,6 +1265,7 @@ img {
 }
 @media (max-width: 540px) {
   .our-friends__container {
+    padding-bottom: 44px;
     row-gap: 42px;
   }
 }
@@ -1334,18 +1344,39 @@ img {
   align-content: space-between;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 98px;
   row-gap: 60px;
 }
 .help__container > * {
   flex-basis: auto;
+}
+@media (max-width: 768px) {
+  .help__container {
+    align-content: center;
+  }
+}
+@media (max-width: 540px) {
+  .help__container {
+    padding: 42px 5px;
+    row-gap: 42px;
+  }
 }
 
 .help__title {
   width: 25.8333333333%;
   text-align: center;
   color: #545454;
+}
+@media (max-width: 768px) {
+  .help__title {
+    width: 43.7853107345%;
+  }
+}
+@media (max-width: 540px) {
+  .help__title {
+    width: 74%;
+  }
 }
 
 .help__content-container {
@@ -1359,6 +1390,24 @@ img {
 }
 .help__content-container > * {
   flex-basis: auto;
+}
+@media (max-width: 768px) {
+  .help__content-container {
+    width: 88.9830508475%;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 55px 59px;
+  }
+}
+@media (max-width: 540px) {
+  .help__content-container {
+    width: 96.6666666667%;
+    gap: 30px;
+  }
+  .help__content-container > :last-child {
+    margin-right: auto;
+  }
 }
 
 .help__option {
@@ -1375,10 +1424,27 @@ img {
 .help__option:hover, .help__option:active {
   animation: pulsation 1s infinite normal ease 0s;
 }
+@media (max-width: 768px) {
+  .help__option {
+    min-width: 170px;
+  }
+}
+@media (max-width: 540px) {
+  .help__option {
+    min-width: 130px;
+    height: 87px;
+  }
+}
 
 .help__icon {
   width: 60px;
   height: 60px;
+}
+@media (max-width: 540px) {
+  .help__icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .help__subtitle {

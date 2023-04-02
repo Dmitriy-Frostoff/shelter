@@ -18,12 +18,14 @@
   
   // block-model
   @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
-  margin-top: 80px;
-  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 98px;
   row-gap: 60px;
+
   >* {
     flex-basis: auto;
   }
+
   // Typography
 
   // Decoration
@@ -31,7 +33,14 @@
   // Animation
 
   // Various
+  @include media-tablet {
+    align-content: center;
+  }
 
+  @include media-mobile {
+    padding: 42px 5px;
+    row-gap: 42px;
+  }
 }
 
 .help__title {
@@ -47,6 +56,13 @@
 
   // Various
 
+  @include media-tablet {
+    width: calc(310px / $content-width-tablet * 100%);
+  }
+
+  @include media-mobile {
+    width: calc(222px / $content-width-mobile * 100%);
+  }
 }
 
 .help__content-container {
@@ -63,6 +79,22 @@
 
   // Various
 
+  @include media-tablet {
+    width: calc(630px / $content-width-tablet * 100%  );
+    align-content: space-around;  
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 55px 59px;
+  }
+
+  @include media-mobile {
+    width: calc(290px / $content-width-mobile * 100%);
+    gap: 30px;
+
+    > :last-child {
+      margin-right: auto;
+    }
+  }
 }
 
 .help__option {
@@ -84,6 +116,15 @@
     @extend %transition-basic;
     @include animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s);
   }
+
+  @include media-tablet {
+    min-width: 170px;
+  }
+
+  @include media-mobile {
+    min-width: 130px;
+    height: 87px;
+  }
 }
 
 .help__icon {
@@ -100,6 +141,10 @@
 
   // Various
 
+  @include media-mobile {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .help__subtitle {
