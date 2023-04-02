@@ -29,7 +29,9 @@
   // Animation
 
   // Various
-
+  @include media-mobile {
+    row-gap: 42px;
+  }
 }
 
 .our-friends__title {
@@ -64,6 +66,15 @@
 
   // Various
   
+  @include media-tablet {
+    column-gap: 12px;
+  }
+
+  @include media-mobile {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+  }
 }
 
 .our-friends__content-container_pets-page {
