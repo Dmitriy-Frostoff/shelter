@@ -1557,7 +1557,7 @@ img {
 }
 
 .credit-card {
-  width: 91.8421052632%;
+  width: 349px;
   height: 43px;
   display: flex;
   flex-direction: row;
@@ -1574,6 +1574,11 @@ img {
 }
 .credit-card:hover, .credit-card:active {
   border-radius: 9px;
+}
+@media (max-width: 540px) {
+  .credit-card {
+    width: 281px;
+  }
 }
 
 .card-svg {
@@ -1621,6 +1626,39 @@ img {
 .footer__container > :nth-child(3) {
   flex-basis: 25%;
 }
+@media (max-width: 768px) {
+  .footer__container {
+    padding-top: 30px;
+    justify-content: space-around;
+    row-gap: 65px;
+  }
+  .footer__container > :nth-child(1) {
+    flex-basis: 39.406779661%;
+  }
+  .footer__container > :nth-child(2) {
+    flex-basis: 42.6553672316%;
+  }
+  .footer__container > :nth-child(3) {
+    flex-basis: 42.3728813559%;
+  }
+}
+@media (max-width: 540px) {
+  .footer__container {
+    row-gap: 40px;
+  }
+  .footer__container > :nth-child(1) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(2) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(3) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(2) > .footer__link-wrapper {
+    justify-content: flex-start;
+  }
+}
 
 .footer__content-container {
   height: 234px;
@@ -1633,9 +1671,27 @@ img {
   flex-wrap: nowrap;
   margin-top: 16px;
 }
+@media (max-width: 768px) {
+  .footer__content-container {
+    margin-top: 0;
+  }
+}
+@media (max-width: 540px) {
+  .footer__content-container {
+    height: auto;
+    margin-top: 0;
+    row-gap: 36px;
+  }
+}
 
 .footer__title {
   color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .footer__title {
+    text-align: center;
+    width: 98%;
+  }
 }
 
 .footer__link-wrapper {
@@ -1651,6 +1707,12 @@ img {
 .footer__link-wrapper > * {
   flex-basis: auto;
 }
+@media (max-width: 540px) {
+  .footer__link-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .footer__link:hover, .footer__link:active {
   animation: pulsation 1s infinite normal ease 0s;
@@ -1663,11 +1725,26 @@ img {
 .footer__link-title {
   color: #F1CDB3;
 }
+@media (max-width: 540px) {
+  .footer__link-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .footer__image {
   width: 300px;
   height: 310px;
   align-self: end;
+}
+@media (max-width: 540px) {
+  .footer__image {
+    width: 86.6666666667%;
+    height: 89.6666666667%;
+  }
 }
 
 .layout-one-column {
