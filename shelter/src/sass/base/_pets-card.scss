@@ -15,7 +15,14 @@
   // Animation
 
   // Various
+  @include media-tablet {
+    column-gap: 40px;
+  }
 
+  @include media-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .pets-card__container_pets-page {

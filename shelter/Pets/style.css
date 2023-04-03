@@ -418,6 +418,15 @@ body {
   line-height: 2.3rem;
   letter-spacing: 0.06em;
 }
+@media (max-width: 540px) {
+  .title-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .title-h4 {
   font-style: normal;
@@ -425,6 +434,15 @@ body {
   font-size: 1.5rem;
   line-height: 1.65rem;
   letter-spacing: 0.06em;
+}
+@media (max-width: 540px) {
+  .title-h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+  }
 }
 
 .paragraph-l {
@@ -555,6 +573,11 @@ img {
   background-color: #F1CDB3;
   border-radius: 100px;
 }
+@media (max-width: 540px) {
+  .our-friends__button_left {
+    order: 1;
+  }
+}
 
 .our-friends__button_right {
   width: 52px;
@@ -570,6 +593,11 @@ img {
 .our-friends__button_right:active {
   background-color: #F1CDB3;
   border-radius: 100px;
+}
+@media (max-width: 540px) {
+  .our-friends__button_right {
+    order: 1;
+  }
 }
 
 .our-friends__button {
@@ -614,6 +642,17 @@ img {
 }
 .pets-card__container > * {
   flex-basis: auto;
+}
+@media (max-width: 768px) {
+  .pets-card__container {
+    column-gap: 40px;
+  }
+}
+@media (max-width: 540px) {
+  .pets-card__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .pets-card__container_pets-page {
@@ -1038,7 +1077,20 @@ img {
   align-items: center;
   row-gap: 60px;
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 99px;
+}
+@media (max-width: 768px) {
+  .our-friends__container {
+    padding-bottom: 77px;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 540px) {
+  .our-friends__container {
+    padding-top: 42px;
+    padding-bottom: 39px;
+    row-gap: 39px;
+  }
 }
 
 .our-friends__title {
@@ -1061,6 +1113,14 @@ img {
 }
 .our-friends__content-container > * {
   flex-basis: auto;
+}
+@media (max-width: 768px) {
+  .our-friends__content-container {
+    max-height: 1373px;
+    flex-direction: column;
+    column-gap: 12px;
+    overflow: hidden;
+  }
 }
 
 .our-friends__content-container_pets-page {
@@ -1091,6 +1151,11 @@ img {
 .our-friends__buttons-container > * {
   flex-basis: auto;
 }
+@media (max-width: 540px) {
+  .our-friends__buttons-container {
+    column-gap: 10px;
+  }
+}
 
 .footer {
   background: url("../src/assets/background/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
@@ -1117,6 +1182,39 @@ img {
 .footer__container > :nth-child(3) {
   flex-basis: 25%;
 }
+@media (max-width: 768px) {
+  .footer__container {
+    padding-top: 30px;
+    justify-content: space-around;
+    row-gap: 65px;
+  }
+  .footer__container > :nth-child(1) {
+    flex-basis: 39.406779661%;
+  }
+  .footer__container > :nth-child(2) {
+    flex-basis: 42.6553672316%;
+  }
+  .footer__container > :nth-child(3) {
+    flex-basis: 42.3728813559%;
+  }
+}
+@media (max-width: 540px) {
+  .footer__container {
+    row-gap: 40px;
+  }
+  .footer__container > :nth-child(1) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(2) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(3) {
+    flex-basis: auto;
+  }
+  .footer__container > :nth-child(2) > .footer__link-wrapper {
+    justify-content: flex-start;
+  }
+}
 
 .footer__content-container {
   height: 234px;
@@ -1129,9 +1227,27 @@ img {
   flex-wrap: nowrap;
   margin-top: 16px;
 }
+@media (max-width: 768px) {
+  .footer__content-container {
+    margin-top: 0;
+  }
+}
+@media (max-width: 540px) {
+  .footer__content-container {
+    height: auto;
+    margin-top: 0;
+    row-gap: 36px;
+  }
+}
 
 .footer__title {
   color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .footer__title {
+    text-align: center;
+    width: 98%;
+  }
 }
 
 .footer__link-wrapper {
@@ -1147,6 +1263,12 @@ img {
 .footer__link-wrapper > * {
   flex-basis: auto;
 }
+@media (max-width: 540px) {
+  .footer__link-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 .footer__link:hover, .footer__link:active {
   animation: pulsation 1s infinite normal ease 0s;
@@ -1159,11 +1281,26 @@ img {
 .footer__link-title {
   color: #F1CDB3;
 }
+@media (max-width: 540px) {
+  .footer__link-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}
 
 .footer__image {
   width: 300px;
   height: 310px;
   align-self: end;
+}
+@media (max-width: 540px) {
+  .footer__image {
+    width: 86.6666666667%;
+    height: 89.6666666667%;
+  }
 }
 
 .layout-one-column {

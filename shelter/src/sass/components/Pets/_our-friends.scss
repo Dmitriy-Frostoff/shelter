@@ -29,9 +29,15 @@
   // Animation
 
   // Various
+  @include media-tablet {
+    padding-bottom: 77px;
+    row-gap: 30px;
+  }
+
   @include media-mobile {
-    padding-bottom: 44px;
-    row-gap: 42px;
+    padding-top: 42px;
+    padding-bottom: 39px;
+    row-gap: 39px;
   }
 }
 
@@ -68,13 +74,10 @@
   // Various
   
   @include media-tablet {
+    max-height: 1373px;
+    flex-direction: column;
     column-gap: 12px;
-  }
-
-  @include media-mobile {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    row-gap: 20px;
+    overflow: hidden;
   }
 }
 
@@ -111,4 +114,7 @@
 
   // Various
   
+  @include media-mobile {
+    column-gap: 10px;
+  }
 }
