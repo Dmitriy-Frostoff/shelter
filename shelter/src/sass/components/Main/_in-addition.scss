@@ -139,7 +139,7 @@
   // Position
   
   // block-model
-  width: calc(349px / 380px * 100%);
+  width: 349px;
   height: 43px;
   @include flex-model-multiple-columns ($basis: auto, $align-content: normal, $justify-content: space-evenly, $align-items: center);
   flex-wrap: nowrap;
@@ -153,6 +153,10 @@
   // Various
   &:hover, &:active {
     border-radius: 9px;
+  }
+
+  @include media-mobile {
+    width: 281px;
   }
 }
 
