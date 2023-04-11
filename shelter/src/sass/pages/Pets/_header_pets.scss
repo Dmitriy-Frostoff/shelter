@@ -55,12 +55,30 @@
   // Typography
 
   // Decoration
+  background: $color-light-xl;
 
   // Animation
 
   // Various
   @include media-tablet-minus1px {
-    position: relative;
+  }
+}
+
+@include media-tablet-minus1px {
+  .nav_active-pets {
+    // Position
+    right: 0;
+    // block-model
+    height: 100vh;
+    // Typography
+  
+    // Decoration
+    background: $color-light-xl;
+
+    // Animation
+    @include transition ($property: right, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
+    // Various
   }
 }
 
@@ -122,4 +140,12 @@
     width: 100%;
     border-bottom: 3px solid $color-primary;
   }
+
+  @include media-tablet-minus1px {
+    &:before {
+      // Position
+      bottom: -5px;
+      left: 0;
+    }
+}
 }
