@@ -108,25 +108,34 @@
   // Animation
 
   // Various
+  
   @include media-tablet-minus1px {
-    position: relative;
+    // Position
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 40;
+    // block-model
+    width: 320px;
+    height: 0;
+    @include flex-model-one-column ($align-content: space-between, $justify-content: flex-end, $align-items: center);
+    flex-wrap: nowrap;
+
+    // Decoration
     background: $color-dark-3xl;
+
+    // Animation
+
+    @include transition ($property: right, $duration: 0.7s, $timing-function: ease, $delay: 0s);
   }
 }
 
 @include media-tablet-minus1px {
   .nav_active {
     // Position
-    position: absolute;
-    top: 0;
     right: 0;
-    z-index: 10;
-
     // block-model
-    width: 320px;
     height: 100vh;
-    @include flex-model-one-column ($align-content: space-between, $justify-content: space-between, $align-items: center);
-    flex-wrap: nowrap;
 
     // Typography
   
@@ -134,7 +143,8 @@
     background: $color-dark-3xl;
 
     // Animation
-  
+    @include transition ($property: right, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
     // Various
   }
 }
@@ -156,16 +166,16 @@
   @include media-tablet-minus1px {
     /* Position */
     overflow: auto;
+    @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+    flex-wrap: nowrap;
+    row-gap: 42px;
 
     /* block-model */
-    width: 320px;
-    display: none;
-    // padding: 25px 0;
-
+    
     /* Typography */
     
     /* Decoration */
-    transform: translateX(100%);
+
     /* Animation */
     @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
 
@@ -179,15 +189,12 @@
     /* Position */
 
     /* block-model */
-    @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
-    flex-wrap: nowrap;
-    row-gap: 42px;
+    margin-bottom: 9px;
     /* Typography */
     
     /* Decoration */
-    transform: translateX(0%);
+
     /* Animation */
-    @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
 
     /* Various */
 
@@ -208,6 +215,13 @@
   // Animation
 
   // Various
+  @include media-tablet-minus1px {
+  // block-model
+  width: 100%;
+  // Typography
+  text-align: center;
+}
+
   @include media-mobile {
     @include text ($style: normal, $weight: 400, $size: 3.2rem, $height: 5.12rem, $let-spacing: normal);
   }
@@ -253,6 +267,11 @@
       @extend %transition-basic;
       transform-origin: bottom right;
     }
+  }
+
+  @include media-tablet-minus1px {
+    // block-model
+    width: inherit;
   }
 }
 

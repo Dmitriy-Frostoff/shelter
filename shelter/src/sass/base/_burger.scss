@@ -17,7 +17,7 @@ $burger-menu-height: 22px;
 
 }
 
-@media (max-width: 767px){
+@include media-tablet-minus1px {
   
   .burger-menu {
       /* Position */
@@ -40,9 +40,10 @@ $burger-menu-height: 22px;
   .header__burger-menu {
       /* Position */
       position: relative;
+      z-index: 50;
 
       /* block-model */
-      align-self: flex-end;
+
       /* Typography */
   
       /* Decoration */
@@ -51,7 +52,7 @@ $burger-menu-height: 22px;
       @include transition ($property: all, $duration: 0.7s, $timing-function: ease, $delay: 0s);
 
       /* Various */
-
+    
   }
 
   .header__burger-menu::before {
@@ -148,9 +149,9 @@ $burger-menu-height: 22px;
   
   .header__burger-menu_active {
       /* Position */
-
+      z-index: 50;
       /* block-model */
-      margin: 50px 21px 0 0;
+
       /* Typography */
       
       /* Decoration */
