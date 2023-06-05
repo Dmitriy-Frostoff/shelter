@@ -1,0 +1,24 @@
+%font-Georgia {
+  font-family: 'Georgia';
+} 
+
+%font-Arial {
+  font-family: 'Arial';
+} 
+
+%transition-basic {
+  transition: all 0.7s ease 0s;
+}
+
+%pointer-events-disable {
+  pointer-events: none;
+}
+
+%reset-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}

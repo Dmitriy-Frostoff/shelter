@@ -1,0 +1,13 @@
+@keyframes pulsation {
+  from {
+    transform: scaleX(0.95);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@mixin animation ($name: pulsation, $duration: 1s, $iteration-count: infinite, $direction: normal, $timing-function: ease, $delay: 0s) {
+  animation: $name $duration $iteration-count $direction $timing-function $delay;
+}

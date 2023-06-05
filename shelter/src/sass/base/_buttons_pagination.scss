@@ -1,0 +1,136 @@
+.button-pagination {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+
+  // Typography
+
+  // Decoration
+  @extend %cursor-pointer;
+  // Animation
+  @extend %transition-basic;
+  
+  // Various
+
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+}
+
+.button-pagination_normal {
+  // Position
+  
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  pointer-events: all;
+  // Animation
+
+  // Various
+  & >:nth-child(1) {
+    fill: $color-dark-3xl;
+  }
+
+  & >:nth-child(2) {
+    stroke: $color-primary;
+  }
+}
+
+.button-pagination_active {
+  // Position
+  
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  background: $color-primary;
+  // Animation
+
+  // Various
+
+}
+
+.button-pagination_disabled {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  & >:nth-child(1) {
+    fill: $color-dark-s;
+  }
+
+  & >:nth-child(2) {
+    stroke: $color-dark-s;
+  }
+
+  // Animation
+
+  // Various
+
+}
+
+.button-pagination_count {
+  // Position
+  
+  // block-model
+
+  // Typography
+  @extend %font-Georgia;
+  @include text ($style: normal, $weight: 400, $size: 2rem, $height: 2.3rem, $let-spacing: 0.06em);
+
+  color: $color-dark-3xl;
+  // Decoration
+  @include border ($width: 2px, $style: solid, $color: $color-primary);
+  // Animation
+
+  // Various
+
+}
+
+.buttons-item {
+  // Position
+
+  // block-model
+  width: 52px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  border-radius: 100px;
+  // Animation
+
+  // Various
+  
+}
+
+.buttons-item_disabled {
+  // Position
+
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  @extend %pointer-events-disable;
+
+  // Animation
+
+  // Various
+  
+}

@@ -1,0 +1,12 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "Cozy House Shelter for pets in Boston",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/sass/main.scss:Main/style.css src/sass/pets.scss:Pets/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitriy Frostoff",
+  "license": "ISC"
+}

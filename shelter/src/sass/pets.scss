@@ -1,0 +1,26 @@
+@import "base/normalize";
+
+//abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/animations";
+
+//base
+@import "base/common";
+@import "base/buttons";
+@import "base/typography";
+@import "base/pets-card";
+@import "base/buttons_pagination";
+@import "base/burger";
+
+//components
+@import "components/Main/header";
+@import "components/Pets/our-friends";
+@import "components/Main/footer";
+
+//layout
+@import "layout/content-structure";
+
+//pages
+@import "./pages/Pets/header_pets";

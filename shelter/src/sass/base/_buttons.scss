@@ -1,0 +1,134 @@
+.button {
+  // Position
+
+  // block-model
+  @include flex-model-one-column ($align-content: center, $justify-content: center, $align-items: center);
+  // Typography
+  @extend %font-Georgia;
+  @include text ($style: normal, $weight: 400, $size: 17px, $height: 130%, $let-spacing: 0.06em);
+  // Decoration
+  @include border ($color: transparent);
+  border-radius: 100px;
+  text-align: center;
+
+  // Animation
+  @extend %transition-basic;
+  
+  // Various
+
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+  }
+}
+
+
+.not-only__button {
+  // Position
+  
+  // block-model
+  width: 207px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  background: $color-primary;
+  // Animation
+
+  // Various
+
+}
+
+.our-friends__button_left {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  // Typography
+
+  // Decoration
+  background: url("../src/assets/images/Main/03_Our%20Friends/buttons/button_arrow_left.svg");
+  background-repeat: no-repeat;
+  @extend %cursor-pointer;
+  @extend %transition-basic;
+
+  // Animation
+
+  // Various
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+
+  @include media-mobile {
+    order: 1;
+  }
+}
+
+.our-friends__button_right {
+  // Position
+  
+  // block-model
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  // Typography
+
+  // Decoration
+  background: url("../src/assets/images/Main/03_Our%20Friends/buttons/button_arrow_right.svg");
+  background-repeat: no-repeat;
+  @extend %cursor-pointer;
+  @extend %transition-basic;
+
+  // Animation
+
+  // Various
+  &:hover {
+    @extend %transition-basic;
+    background-color: $color-primary-light;
+    border-radius: 100px;
+  }
+
+  &:active {
+    @extend %transition-basic;
+    background-color: $color-primary;
+    border-radius: 100px;
+  }
+
+  @include media-mobile {
+    order: 1;
+  }
+  
+}
+
+.our-friends__button {
+  // Position
+  
+  // block-model
+  width: 261px;
+  height: 52px;
+  // Typography
+
+  // Decoration
+  background-color: $color-primary;
+
+  // Animation
+
+  // Various
+
+}

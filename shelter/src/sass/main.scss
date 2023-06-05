@@ -1,0 +1,27 @@
+@import "base/normalize";
+
+//abstracts
+@import "abstracts/constants";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/animations";
+
+//base
+@import "base/common";
+@import "base/buttons";
+@import "base/typography";
+@import "base/pets-card";
+@import "base/buttons_pagination";
+@import "base/burger";
+
+//components
+@import "components/Main/header";
+@import "components/Main/not-only";
+@import "components/Main/about";
+@import "components/Main/our-friends";
+@import "components/Main/help";
+@import "components/Main/in-addition";
+@import "components/Main/footer";
+
+//layout
+@import "layout/content-structure";

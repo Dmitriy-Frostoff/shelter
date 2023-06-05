@@ -1,0 +1,114 @@
+.our-friends {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  background-color: $color-background-light-pets;
+  // Animation
+
+  // Various
+
+}
+
+.our-friends__container {
+  // Position
+
+  // block-model
+  @include flex-model-one-column ($align-content: center, $justify-content: center, $align-items: center);
+  row-gap: 60px;
+  padding-top: 80px;
+  padding-bottom: 99px;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-mobile {
+    padding-bottom: 44px;
+    row-gap: 42px;
+  }
+}
+
+.our-friends__title {
+  // Position
+
+  // block-model
+  max-width: 400px;
+  // Typography
+  text-align: center;
+  white-space: pre-line;
+  // Decoration
+  color: $color-dark-l;
+  // Animation
+
+  // Various
+
+}
+
+.our-friends__content-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 53px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+  @include media-tablet {
+    column-gap: 12px;
+  }
+
+  @include media-mobile {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+  }
+}
+
+.our-friends__content-container_pets-page {
+  // Position
+
+  // block-model
+  width: 100%;
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 53px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
+
+.our-friends__buttons-container {
+  // Position
+
+  // block-model
+  @include flex-model-multiple-columns ($basis: auto, $align-content: space-between, $justify-content: space-between, $align-items: center);
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
