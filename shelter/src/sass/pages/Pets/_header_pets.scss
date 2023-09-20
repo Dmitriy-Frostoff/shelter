@@ -1,0 +1,151 @@
+.header_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  // background: $color-background-dark-header;
+  background: 
+    $color-light-xl;
+    // filter: contrast(270%) brightness(700%);
+  // Animation
+
+  // Various
+
+}
+
+.logo-title_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.logo-subtitle_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-3xl;
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav_pets {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  background: $color-light-xl;
+
+  // Animation
+
+  // Various
+  @include media-tablet-minus1px {
+  }
+}
+
+@include media-tablet-minus1px {
+  .nav_active-pets {
+    // Position
+    right: 0;
+    // block-model
+    height: 100vh;
+    // Typography
+  
+    // Decoration
+    background: $color-light-xl;
+
+    // Animation
+    @include transition ($property: right, $duration: 0.7s, $timing-function: ease, $delay: 0s);
+
+    // Various
+  }
+}
+
+.nav__item_pets {
+  // Position
+  
+  // block-model
+
+  // Typography
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.nav__link_pets {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  color: $color-dark-l;
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:hover {
+    color: $color-dark-3xl;
+  }
+
+  &:active {
+    color: $color-dark-3xl;
+  }
+}
+
+.link_current-page_pets {
+  // Position
+  position: relative;
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %pointer-events-disable;
+  color: $color-dark-3xl;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:before {
+    position: absolute;
+
+    content: "";
+    bottom: 11px;
+    width: 100%;
+    border-bottom: 3px solid $color-primary;
+  }
+
+  @include media-tablet-minus1px {
+    &:before {
+      // Position
+      bottom: -5px;
+      left: 0;
+    }
+}
+}

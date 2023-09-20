@@ -1,0 +1,129 @@
+.not-only {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.not-only-container {
+  // Position
+  
+  // block-model
+  padding-top: 60px;
+  padding-bottom: 0;
+  @include flex-model-two-columns ($first-basis: calc(460 / ($content-width-desktop / 1px) * 100%), $last-basis: calc(698 / ($content-width-desktop / 1px) * 100%), $align-content: space-between, $justify-content: center, $align-items: center);
+  column-gap: calc(42px / $content-width-desktop * 100%);
+  // Typography
+
+  // Decoration
+  
+  // Animation
+  @extend %transition-basic;
+
+  // Various
+
+  @include media-tablet {
+    // Position
+  
+    // block-model
+    padding-top: 30px;
+    @include flex-model-one-column ($align-content: space-between, $justify-content: space-between, $align-items: center);
+    flex-wrap: nowrap;
+    column-gap: calc(42px / $content-width-desktop * 100%);
+    // Typography
+
+    // Decoration
+    
+    // Animation
+    @extend %transition-basic;
+
+    // Various
+
+  };
+}
+
+.not-only__content-container {
+  // Position
+  
+  // block-model
+  @include flex-model-one-column ($align-content: space-between, $justify-content: flex-start, $align-items: flex-start);
+  row-gap: 42px;
+  padding: 0 0 79px 0;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+  @extend %transition-basic;
+
+  // Various
+  &>:nth-child(1) {
+    max-width: 70%;
+  }
+
+  @include media-tablet {
+    max-width: calc(460px / $content-width-tablet * 100%);
+    @include flex-model-one-column ($align-content: space-between, $justify-content: center, $align-items: center);
+    flex-wrap: nowrap;
+    padding-bottom: 99px;
+  }
+
+  @include media-mobile {
+    min-width: 100%;
+    padding-bottom: 105px;
+  }
+}
+
+.not-only__paragraph {
+  // Position
+  
+  // block-model
+
+  // Typography
+
+  // Decoration
+  color:$color-dark-s;
+  // Animation
+
+  // Various
+
+  @include media-mobile {
+    @include text ($style: normal, $weight: 400, $size: 1.5rem, $height: 24px, $let-spacing: normal);
+    text-align: center;
+  }
+}
+
+.not-only__puppy {
+  // Position
+  
+  // block-model
+  width: calc(698 / ($content-width-desktop / 1px) * 100%);
+  height: calc(728 / ($content-width-desktop / 1px) * 100%);
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+  @include media-tablet {
+    width: calc(569 / ($content-width-tablet / 1px) * 100%);
+    height: calc(593 / ($content-width-tablet / 1px) * 100%);
+    align-self: flex-end;
+  }
+
+  @include media-mobile {
+    width: calc(260 / ($content-width-mobile / 1px) * 100%);
+    height: calc(272 / ($content-width-mobile / 1px) * 100%);
+    align-self: flex-end;
+  }
+}
